@@ -38,6 +38,7 @@ int main()
         if (choice == 1)
         {
             cout << "Opening Subnet Calculator..." << endl;
+            subnetcalc();
         }
         else if (choice == 2)
         {
