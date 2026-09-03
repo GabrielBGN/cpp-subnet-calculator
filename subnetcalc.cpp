@@ -2,8 +2,6 @@
 #include <cstdint>
 
 using namespace std;
-
-
 // Prints a 32-bit IP address in normal dotted format
 void printIP(uint32_t ip)
 {
@@ -13,9 +11,8 @@ void printIP(uint32_t ip)
          << (ip & 255);
 }
 
+void subnetcalc(){
 
-int main()
-{
     int a, b, c, d;
     char dot;
     int prefix;
@@ -42,7 +39,7 @@ int main()
     if (prefix < 0 || prefix > 32)
     {
         cout << "Invalid prefix." << endl;
-        return 1;
+        return;
     }
 
 
@@ -151,5 +148,4 @@ int main()
          << usableHosts << endl;
 
 
-    return 0;
 }
